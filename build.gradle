@@ -6,14 +6,15 @@ buildscript {
     ext.target_sdk_version = 31
 
     repositories {
-        maven { url uri(rootProject.rootDir.path + '/.aar/maven')}
+        //maven { url uri(rootProject.rootDir.path + '/.aar/maven')}
         maven { url uri('https://s01.oss.sonatype.org/content/repositories/releases/')}
 
         mavenCentral()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.2'
+        //classpath 'com.android.tools.build:gradle:4.2.2'
+        classpath 'com.android.tools.build:gradle:7.1.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         // DRouter Plugin
@@ -23,7 +24,7 @@ buildscript {
 
 allprojects {
     repositories {
-        maven { url uri(rootProject.rootDir.path + '/.aar/maven')}
+        //maven { url uri(rootProject.rootDir.path + '/.aar/maven')}
         maven { url uri('https://s01.oss.sonatype.org/content/repositories/releases/')}
         mavenCentral()
         google()

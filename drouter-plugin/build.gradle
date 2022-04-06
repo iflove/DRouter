@@ -7,8 +7,12 @@ dependencies {
     implementation gradleApi()
     implementation localGroovy()
     implementation 'org.javassist:javassist:3.28.0-GA'
+    //implementation files('libs\\commons-io-2.11.0.jar')
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    //implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
+
     //noinspection GradleDependency
-    compileOnly 'com.android.tools.build:gradle:4.2.2'
+    compileOnly 'com.android.tools.build:gradle:7.1.1'
 }
 
 task sourcesJar(type: Jar) {
